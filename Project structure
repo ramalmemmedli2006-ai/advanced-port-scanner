@@ -1,0 +1,16 @@
+advanced-port-scanner/
+├── README.md
+├── requirements.txt
+├── main.py
+├── scanner/
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── models.py
+│   ├── ports.py
+│   ├── resolver.py
+│   ├── scanner.py
+│   ├── services.py
+│   └── utils.py
+├── output/
+└── tests/
+    └── test_ports.py
