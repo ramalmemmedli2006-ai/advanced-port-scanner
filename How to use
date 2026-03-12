@@ -1,0 +1,94 @@
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/advanced-port-scanner.git
+cd advanced-port-scanner
+
+Create a virtual environment and activate it:
+
+python -m venv venv
+source venv/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+Usage
+
+Scan common ports:
+
+python main.py scanme.nmap.org
+
+Scan a custom range:
+
+python main.py 127.0.0.1 -p 1-1024
+
+Scan specific ports:
+
+python main.py localhost -p 22,80,443,8080
+
+Set thread count and timeout:
+
+python main.py example.com -p 1-1000 -t 200 --timeout 1.0
+
+Export results:
+
+python main.py scanme.nmap.org -p 1-1000 --json output/results.json
+Example Output
+Target      : scanme.nmap.org
+Resolved IP : 45.33.32.156
+Ports Scanned: 1000
+
+OPEN PORTS
+22/tcp   ssh      OpenSSH 6.6.1p1 Ubuntu
+80/tcp   http     Apache httpd
+What This Project Demonstrates
+
+Python networking fundamentals
+
+TCP port scanning
+
+Multithreading
+
+Banner grabbing logic
+
+CLI design
+
+JSON export
+
+Clean software structure
+
+Important Notice
+
+This tool is for educational purposes and authorized security testing only.
+Do not scan systems or networks without permission.
+
+Future Improvements
+
+UDP scanning
+
+OS fingerprinting
+
+CIDR / subnet scanning
+
+Colored terminal output
+
+CSV export
+
+Rate limiting
+
+Stealth scan techniques
+
+FastAPI web dashboard
+
+License
+
+MIT License
+
+
+---
+
+# requirements.txt
+
+```text
+# No external dependencies required
